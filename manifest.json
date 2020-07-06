@@ -1,0 +1,36 @@
+ {
+     "name": "Crawler-Chrome-Extension",
+    "description" : "浏览器爬虫助手-谷歌浏览器插件",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "img/icon-128.png"
+    },
+   "content_scripts": [
+     {
+       "matches": ["<all_urls>"],
+       "js": ["js/jquery.js","js/utils.js","js/master-panel.js", "js/content-script.js"],
+       "css": ["css/master-panel.css"],
+       "run_at": "document_end"
+     }
+   ],
+   "permissions":
+   [
+     "contextMenus",
+     "tabs",
+     "notifications",
+     "webRequest",
+     "webRequestBlocking",
+     "storage",
+     "http://*/*",
+     "https://*/*"
+   ],
+   "background": {
+     "persistent": true,
+     "page": "background.html"
+   },
+   "web_accessible_resources": ["js/master-panel.js"],
+   "homepage_url": "https://www.baidu.com",
+   "options_page": "options.html"
+ }

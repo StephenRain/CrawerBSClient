@@ -1,0 +1,199 @@
+#panel{
+    position:fixed;
+    z-index:9999999999;
+    width: 70%;
+    left: 15%;
+    top: 10%;
+    background-color: rgba(208, 208, 208,0.7);
+    padding: 6px 20px;
+    border: 2px rgb(208, 208, 208) solid
+}
+#panel div{
+    margin:10px 0px
+}
+#panel .caiji-title{
+    margin-bottom: 8px;
+    font-family: 方正粗黑宋简体;
+    color:black !important;
+    font-weight:bold;
+    font-size: 28px;
+    ine-height: 30px
+}
+.float-right{
+    float:right;
+    margin-left: 12px;
+}
+#caiji-msg{
+    color:red
+}
+
+.ant-btn {
+    line-height: 1.499;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    cursor: pointer;
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgba(0,0,0,0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+}
+
+
+textarea {
+    font-family: inherit; /* 1 (changed) */
+    font-size: 18px; /* 1 (changed) */
+    line-height: inherit; /* 1 (changed) */
+    margin: 0; /* 2 */
+}
+
+#panel .caiji-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    background-image: none;
+    border: .05rem solid #bcc3ce;
+    border-radius: .1rem;
+    color: #3b4351;
+    display: block;
+    font-size: 1.2rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    max-width: 100%;
+    outline: none;
+    padding: .25rem .4rem;
+    position: relative;
+    transition: background .2s, border .2s, box-shadow .2s, color .2s;
+    width: 100%;
+}
+/*底部区域*/
+#caiji-pannel-bottom {
+    font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+    font-size: 14px;
+    color: #000000;
+}
+
+#panel .caiji-input:focus {
+    border-color: #5755d9;
+    box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+}
+
+#panel .caiji-input::-webkit-input-placeholder {
+    color: #bcc3ce;
+}
+
+#panel .caiji-input:-ms-input-placeholder {
+    color: #bcc3ce;
+}
+
+#panel .caiji-input::-ms-input-placeholder {
+    color: #bcc3ce;
+}
+
+#panel .caiji-input::placeholder {
+    color: #bcc3ce;
+}
+
+#panel .caiji-input.input-sm {
+    font-size: .7rem;
+    height: 1.4rem;
+    padding: .05rem .3rem;
+}
+
+#panel .caiji-input.input-lg {
+    font-size: .9rem;
+    height: 2rem;
+    padding: .35rem .6rem;
+}
+
+#panel .caiji-input.input-inline {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+
+#panel textarea.caiji-input,
+textarea.caiji-input.input-lg,
+textarea.caiji-input.input-sm {
+    height: auto;
+}
+#panel div input .btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: .05rem solid #5755d9;
+    border-radius: .1rem;
+    color: #5755d9;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .8rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    outline: none;
+    padding: .25rem .4rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background .2s, border .2s, box-shadow .2s, color .2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#panel .btn:focus {
+    box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+}
+
+#panel .btn:focus,
+#panel .btn:hover {
+    background: #f1f1fc;
+    border-color: #4b48d6;
+    text-decoration: none;
+}
+
+#panel .btn:active,
+#panel .btn.active {
+    background: #4b48d6;
+    border-color: #3634d2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ant-btn-primary {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+}
+.ant-btn-red {
+    color: #fff;
+    background-color: #FF5A44;
+    border-color: #FF5A44;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+}
