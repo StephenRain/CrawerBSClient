@@ -11,8 +11,7 @@ const COMM_HEAD = 'head';
 const COMM_END = "end";
 const COMMM_FUNC = "function";
 const COMM_CLEAR = "clear";  //清空采集结果
-const COMM_CLOSE = "close";
-const COMMANDS = [COMM_CLICK, COMM_HEAD, COMM_END, COMMM_FUNC, COMM_CLEAR, COMM_CLOSE];  // 所有的命令
+const COMMANDS = [COMM_CLICK, COMM_HEAD, COMM_END, COMMM_FUNC, COMM_CLEAR];  // 所有的命令
 const DEFAULT_FILE_NAME = "默认采集文件.csv";
 const DEFAULT_DELAY = 1000;
 const CAIJI_DEFAULT_VAL = "空";
@@ -851,8 +850,6 @@ function executePost(postExpress, postList, index) {
                 } else if (action === COMMM_FUNC) {
                     //new Function("config", "jquery","result", detail)(config, jquery,DOWNLOAD_RESULT_CONTAINER);
                     utils.evalFunc(detail);
-                } else if (action === COMM_CLOSE) {
-                    closeCurrPage();
                 } else if (action === COMM_CLEAR) {
                     removeDownloadResult();
                 }
